@@ -13,7 +13,7 @@ function getThemeFile() {
     global $post;
 
     $themeDir = TEMPLATEPATH;
-    $themeFile = 'index.php'; // Complete fallback file
+    $themeFile = '';
 
     if (is_home()) {
         if (file_exists($themeDir . '/' . 'home.php')) {
@@ -179,7 +179,9 @@ function getThemeFile() {
 }
 
 function outputThemeFilename() {
-    echo (getThemeFile()) ? getThemeFile() : 'Couldn\'t figure out which file, sorry!';
+    echo '<div id="showtheme" style="position: absolute; z-index: 9999; padding: 1em; background: white; color: black; opacity: 0.8; border: dotted 2px #999;">';
+    echo (getThemeFile()) ? getThemeFile() : 'Unknown theme file';
+    echo '</div>';
     return;
 }
 
