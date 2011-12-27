@@ -45,12 +45,4 @@ function outputThemeFilename() {
     return;
 }
 
-$stfOptions = array('require_admin' => true);
-
-if ($stfOptions['require_admin'] == true) {
-   if (current_user_can('administrator')) {
-     add_action('wp_head', 'outputThemeFilename');
-   }
-} else {
-     add_action('wp_head', 'outputThemeFilename');
-}
+add_action('wp_head', 'outputThemeFilename');}
