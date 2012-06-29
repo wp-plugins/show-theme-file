@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: asdasDan
 Tags: theme, file, template, hierarchy
-Tested up to: 3.2.1
+Tested up to: 3.4
 
 This is a simple plugin that uses wordpress' hierarchy to determine what theme file the current page used to render it!
 
