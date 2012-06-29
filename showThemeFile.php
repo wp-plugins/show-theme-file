@@ -45,4 +45,4 @@ function outputThemeFilename() {
     return;
 }
 
-add_action('wp_head', 'outputThemeFilename');}
+add_action('wp_head', 'outputThemeFilename');
